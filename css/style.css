@@ -202,4 +202,8 @@ nav ul li:last-child a{
 .estimate {
     padding: 250px 0 150px;
     display: flex;
+    justify-content: space-between;
+}
+.el_row{
+    display: flex;
 }
