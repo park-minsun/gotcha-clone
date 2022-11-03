@@ -1,0 +1,205 @@
+/* COMMON */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #555;
+    font-family: 'pretendard', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #555;
+    display: block;
+}
+
+.Sdream{
+    font-family: 'SCoreDream','pretendard', sans-serif;
+    font-weight: 400;
+}
+.inner{width: 1100px; margin: 0 auto;}
+.inner h1{
+    color: #333;
+    font-size: 40px;
+}
+.inner h1 strong{
+    color: #333;
+    font-weight: 700;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: transparent;
+}
+.headerWrap{
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerWrap .logo{
+    width: 135px;
+    height: 70px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{padding: 0 25px;}
+nav ul li a{font-size: 18px;}
+nav ul li:last-child a{ 
+    background-color: #0055ff;
+    color: #fff;
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+
+
+/* mainVisual */
+
+.mainVisual{
+    width: 100%;
+    height: 800px;
+    border-radius: 0 0 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+.mainVisual .swiper{
+    width: 100%;
+    height: 800px;
+}
+.mainVisual .swiper-wrapper{
+    width: 100%;
+    height: 800px;
+}
+.mainVisual .swiper-slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mainVisual .swiper-pagination{
+    width: 100px;
+    left: 80%;
+    bottom: 160px;
+}
+.sl02_ico{
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.heart{
+    position: absolute;
+    display: block;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 140px;
+}
+.bubble{
+    position: absolute;
+    display: block;
+    width: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 115px;
+    margin-left: -8px;
+}
+.car{
+    position: absolute;
+    display: block;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 220px;
+}
+.main_tit{
+    position: absolute;
+    display: block;
+    width: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 265px;
+}
+.start{
+    position: absolute;
+    display: block;
+    width: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 475px;
+    animation: start 0.5s step-end infinite;
+}
+@keyframes start {
+    50% {
+        box-shadow: 1px 1px 0 rgb(0, 0, 0, 0);
+        position: relative;
+        top: 477px;
+    }
+}
+
+/* main container */
+
+.mainMenu{
+    width: 1300px;
+    height: 255px;
+    background-color: #0055ff;
+    position: absolute;
+    border-radius: 15px;
+    padding: 50px;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    box-shadow: 0 0 45px rgb(0 85 255 / 30%);
+}
+.mainMenu ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+.mainMenu ul li{
+    width: calc(100%/6 - 20px);
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.mainMenu ul li p{
+    display: block;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.mainMenu ul li p span{
+    display: block;
+    color: #9ad8ff;
+    margin: 8px 0;
+    font-size: 15px;
+}
+.mainMenu ul li img{
+    width: 110px;
+    height: 100px;
+}
+
+/*  */
+
+.estimate {
+    padding: 250px 0 150px;
+    display: flex;
+}
