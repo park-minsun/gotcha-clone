@@ -1,4 +1,16 @@
-
+$(document).ready(function(){
+  // 서브메뉴 숨기고 시작.
+    $('.subMenu').hide();
+    // 마우스오버 메뉴
+    $('nav').mouseover(function(){
+      $('.subMenu').stop().slideDown(300);
+    }).mouseout(function(){
+      $('.subMenu').stop().slideUp(300);
+    });
+  });  
+      
+      
+      
       var swiper = new Swiper(".mainVisual > .mySwiper", {
         pagination: {
           el: ".swiper-pagination",
@@ -19,3 +31,4 @@
 
  // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
       });
+
