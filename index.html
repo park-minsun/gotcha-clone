@@ -10,7 +10,11 @@
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!-- main -->
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <script defer src="./script/main.js"></script>
@@ -172,14 +176,14 @@
                     <a href="javascript:void(0)">구독형 방문세차
                         <span><img src="./img/arrow_ico.svg" alt=""></span></a>
                 </div>
-                <div class="con_img">
+                <div data-aos="fade-left" class="con_img">
                     <img src="./img/cont2_1_picture.png" alt="">
                 </div>
             </div>
         </div>
         <div class="con">
             <div class="inner">
-                <div class="con_img">
+                <div data-aos="fade-right" class="con_img">
                     <img src="./img/cont2_picture.png" alt="">
                 </div>
                 <div class="con_txt">
@@ -198,14 +202,14 @@
                     <a href="javascript:void(0)">디테일링 매장 세차
                         <span><img src="./img/arrow_ico.svg" alt=""></span></a>
                 </div>
-                <div class="con_img">
+                <div data-aos="fade-left" class="con_img">
                     <img src="./img/gotchawash02.png" alt="">
                 </div>
             </div>
         </div>
         <div class="con">
             <div class="inner">
-                <div class="con_img con4_img">
+                <div data-aos="fade-right" class="con_img con4_img">
                     <img src="./img/cont4_picture.png" alt="">
                 </div>
                 <div class="con_txt">
@@ -371,7 +375,14 @@
             </div>
         </div>
     </footer>
-
+    <div class="fix">
+        <div class="back-to-top"><img src="./img/top_arrow.svg" alt=""></div>
+        <div class="customer"><img src="./img/customer_white.svg" alt=""></div>
+    </div>
+    <!-- AOS -->
+    <script>
+        AOS.init();
+      </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
